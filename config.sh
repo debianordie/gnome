@@ -1,3 +1,8 @@
+#!/bin/sh
+. ~/.dod
+
+ensure_dod_module 'desktop'
+
 pkill --full /usr/libexec/gnome-initial-setup
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'es')]"
