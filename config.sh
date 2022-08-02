@@ -1,7 +1,7 @@
 #!/bin/sh
 . ~/.dod
 
-ensure_dod_module 'desktop'
+run_dod_module 'desktop'
 
 pkill --full /usr/libexec/gnome-initial-setup
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
